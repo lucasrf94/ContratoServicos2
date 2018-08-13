@@ -10,7 +10,7 @@ public class Cliente {
 	@Column
 	private String nome;
 	@Id
-	private int id_cliente;
+	private int id;
 	@Column
 	private String rua;
 	@Column
@@ -35,12 +35,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public int getId_cliente() {
-		return id_cliente;
+	public int getId() {
+		return id;
 	}
 
-	public void setId_cliente(int id_cliente) {
-		this.id_cliente = id_cliente;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getRua() {

@@ -121,7 +121,7 @@ public class ClienteBean {
 	}
 
 	private void adicionarCliente() {
-		cliente.setId_cliente(contador++);
+		cliente.setId(contador++);
 		clientes.add(cliente);
 		cliente = new Cliente();
 	}
@@ -129,11 +129,16 @@ public class ClienteBean {
 	private void buscarCliente() {
 		Cliente cliente = new Cliente();
 		for (Cliente cli : clientes) {
-			if (getId_cliente() == cli.getId_cliente())
+			if (getId() == cli.getId())
 				;
 			cliente = cli;
 			setClienteBuscado(cliente);
 		}
+	}
+
+	private int getId() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	public void removerCategoria() {
